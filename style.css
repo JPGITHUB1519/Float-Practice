@@ -1,0 +1,32 @@
+
+*
+{
+	min-height: 200px;
+}
+
+header
+{
+	background-color: red;
+}
+
+section
+{
+	background-color : blue;
+	float : left;
+	margin : 0 1.5%;
+	width: 30%;
+}
+
+aside
+{
+	background-color : green;
+	float : right;
+	margin : 0 1.5%;
+	width : 30%;
+}
+
+footer
+{
+	background-color : purple;
+	clear: both;
+}

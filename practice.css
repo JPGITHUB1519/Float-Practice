@@ -1,0 +1,92 @@
+
+*
+{
+	min-height: 200px;
+}
+
+header
+{
+	background-color: pink;
+}
+
+section
+{
+	background-color : blue;
+	float : left;
+	margin : 0 1.5%;
+	width: 60%;
+}
+
+aside
+{
+	background-color : green;
+	float : right;
+	margin : 0 1.5%;
+	width : 30%;
+}
+
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+/*
+it is important that this clear be applied to an element appearing after the 
+floated elements, not before, to return the page to its normal flow.
+*/
+
+footer
+{
+	background-color : purple;
+	/* will move itself down past the float*/
+}
+
+.primary-footer small
+{
+	float : left;
+}
+
+.primary-footer
+{
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo
+{
+	float : left;
+	border-top: 4px solid #648880;
+  	padding: 40px 0 22px 0;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+/* clearing groups*/
+/* group is clearing the floats within the element with the class of group,*/
+/* an this have support for order browser too */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
